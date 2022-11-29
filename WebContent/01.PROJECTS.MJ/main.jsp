@@ -39,7 +39,7 @@
 	<div class="bodywrap">
 		<!-- 상단 pmj클릭시 상단으로 가는 버튼 -->
 		<div class="coverlogotop">
-			<a href="#" class="abtn"></a>
+			<a href="#" class="abtntop"></a>
 		</div>
 		<!-- 음소거 버튼 -->
 

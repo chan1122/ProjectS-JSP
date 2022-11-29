@@ -9,6 +9,7 @@
 <title>ParkMUsic</title>
 <!-- 인트로 css파일 익스터널방식 -->
 <link rel="stylesheet" href="./CSS/intro/intro.css" />
+<link rel="stylesheet" href="./CSS/common.css" />
 <!-- 인트로 자바스크립트 -->
 <!-- 자바 스크립트 링크 js 불러오기 -->
 <script src="./JS/link.js"></script>
@@ -16,7 +17,7 @@
 </head>
 <body>
 	<div class="logo">
-		<a href="./main.html"><h1>메인 페이지로</h1></a>
+		<a href="./main.jsp"><h1>메인 페이지로</h1></a>
 	</div>
 </body>
 </html>

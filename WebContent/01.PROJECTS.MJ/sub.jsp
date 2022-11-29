@@ -13,6 +13,7 @@
 <!-- css -->
 <link rel="stylesheet" href="./CSS/sub.css" />
 <link rel="stylesheet" href="./CSS/midiaquery.css" />
+<link rel="stylesheet" href="./CSS/common.css" />
 
 <!-- JQ 라이브러리 -->
 <script src="./JS/jquery/jquery-3.6.1.min.js"></script>
@@ -29,7 +30,7 @@
 	<div class="bodywrap">
 		<!-- 상단 pmj클릭시 상단으로 가는 버튼 -->
 		<div class="coverlogotop">
-			<a href="#" class="abtn"></a>
+			<a href="#" class="abtntop"></a>
 		</div>
 
 		<header>

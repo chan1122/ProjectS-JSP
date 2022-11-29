@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" href="./CSS/midiaquery.css" />
         <link rel="stylesheet" href="./CSS/border.css" />
+        <link rel="stylesheet" href="./CSS/common.css" />
 
         <script src="./JS/jquery/jquery-3.6.1.min.js"></script>
         <script src="./JS/jquery/jquery-ui.min.js"></script>
@@ -17,6 +18,9 @@
     </head>
     <body>
         <header>
+        <div class="coverlogotop">
+			<a href="#" class="abtntop"></a>
+		</div>
             <!-- 상단 전체 박스 -->
             <div class="tbox1">
                 <!-- 로그인 회원 가입  -->
@@ -128,11 +132,12 @@
                     <nav class="gnb">
                         <ul>
                             <li class="sm">
-                                <a href="#"> 인물소개♡ </a>
+                                <a href="#"> 앨범소개♡ </a>
                                 <ul class="ssm">
                                     <div class="beforebox">
                                         <li>
-                                            <a href="">페이지 1위곡 인물</a>
+                                            <a href="">앨범
+												상세</a>
                                         </li>
                                     </div>
                                 </ul>
