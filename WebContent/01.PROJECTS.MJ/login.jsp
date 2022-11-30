@@ -20,7 +20,7 @@
 <video src="./images/video/pagevideo2.mp4" autoplay loop class="VID"></video>
 <body>
 	<header>
-	<div class="coverlogotop">
+		<div class="coverlogotop">
 			<a href="#" class="abtntop"></a>
 		</div>
 		<!-- 상단 전체 박스 -->
@@ -127,8 +127,7 @@
 						<li class="sm"><a href="#"> 앨범소개♡ </a>
 							<ul class="ssm">
 								<div class="beforebox">
-									<li><a href="">앨범
-												상세</a></li>
+									<li><a href="">앨범 상세</a></li>
 								</div>
 							</ul></li>
 						<li class="sm"><a href="#"> CHART♡ </a>

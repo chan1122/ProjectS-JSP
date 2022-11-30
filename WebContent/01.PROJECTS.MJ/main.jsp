@@ -44,9 +44,8 @@
 		<!-- 음소거 버튼 -->
 
 		<div class="mutedbtn">
-			<span class="muteon"><i
-				class="fa-solid fa-volume-high"></i></span> <a href="#" class="abtn"></a> <span
-				class="muteoff"><i
+			<span class="muteon"><i class="fa-solid fa-volume-high"></i></span> <a
+				href="#" class="abtn"></a> <span class="muteoff"><i
 				class="fa-solid fa-volume-xmark"></i></span>
 		</div>
 
@@ -167,37 +166,29 @@
 							<li class="sm"><a href="#" class="abtn"> 앨범소개♡ </a>
 								<ul class="ssm">
 									<div class="beforebox">
-										<li><a href="#" class="abtn">앨범
-												상세</a></li>
+										<li><a href="#" class="abtn">앨범 상세</a></li>
 									</div>
 								</ul></li>
 							<li class="sm"><a href="#" class="abtn"> CHART♡ </a>
 								<ul class="ssm">
 									<div class="beforebox">
-										<li><a href="#" class="abtn">PMJ(노래방인기!)</a>
-										</li>
-										<li><a href="#" class="abtn">BMJ(빌보드!)</a>
-										</li>
-										<li><a href="#" class="abtn">MMJ(일반
-												음원차트!)</a></li>
+										<li><a href="#" class="abtn">PMJ(노래방인기!)</a></li>
+										<li><a href="#" class="abtn">BMJ(빌보드!)</a></li>
+										<li><a href="#" class="abtn">MMJ(일반 음원차트!)</a></li>
 									</div>
 								</ul></li>
 							<li class="sm"><a href="#" class="abtn"> 게시판♡ </a>
 								<ul class="ssm">
 									<div class="beforebox">
-										<li><a href="#" class="abtn">회원전용</a>
-										</li>
-										<li><a href="#" class="abtn">일반게시판</a>
-										</li>
+										<li><a href="#" class="abtn">회원전용</a></li>
+										<li><a href="#" class="abtn">일반게시판</a></li>
 									</div>
 								</ul></li>
 							<li class="sm"><a href="#" class="abtn"> 기타세부사항♡ </a>
 								<ul class="ssm">
 									<div class="beforebox">
-										<li><a href="#" class="abtn">안내문구</a>
-										</li>
-										<li><a href="#" class="abtn">페이지
-												소개글</a></li>
+										<li><a href="#" class="abtn">안내문구</a></li>
+										<li><a href="#" class="abtn">페이지 소개글</a></li>
 									</div>
 								</ul></li>
 						</ul>
@@ -215,37 +206,27 @@
 			<div class="wrapp">
 				<div class="ulcoverham">
 					<ul class="hamul">
-						<li><a href="#" class="abtn" class="hambtnbiga">앨범소개</a>
-							<!-- 세부 카테고라 -->
+						<li><a href="#" class="abtn" class="hambtnbiga">앨범소개</a> <!-- 세부 카테고라 -->
 							<ul class="sham king">
-								<li><a href="#" class="abtn" class="shamaa">앨범
-										상세</a></li>
+								<li><a href="#" class="abtn" class="shamaa">앨범 상세</a></li>
 							</ul></li>
 
 						<li><a href="#" class="abtn" class="hambtnbiga">인기!</a>
 							<ul class="sham mostmusic">
-								<li><a href="#" class="abtn" class="shamaa">PMJ</a>
-								</li>
-								<li><a href="#" class="abtn" class="shamaa">BMJ</a>
-								</li>
-								<li><a href="#" class="abtn" class="shamaa">MMJ</a>
-								</li>
+								<li><a href="#" class="abtn" class="shamaa">PMJ</a></li>
+								<li><a href="#" class="abtn" class="shamaa">BMJ</a></li>
+								<li><a href="#" class="abtn" class="shamaa">MMJ</a></li>
 							</ul></li>
 						<li><a href="#" class="abtn" class="hambtnbiga">게시판</a>
 							<ul class="sham Hboard">
-								<li><a href="#" class="abtn" class="shamaa">자유게시판📣</a>
-								</li>
-								<li><a href="#" class="abtn" class="shamaa">회원전용
-										게시판📢</a></li>
+								<li><a href="#" class="abtn" class="shamaa">자유게시판📣</a></li>
+								<li><a href="#" class="abtn" class="shamaa">회원전용 게시판📢</a></li>
 							</ul></li>
 						<li><a href="#" class="abtn" class="hambtnbiga">LANGUAGE</a>
 							<ul class="sham LANGUAGE">
-								<li><a href="#" class="abtn" class="shamaa">EngliSh</a>
-								</li>
-								<li><a href="#" class="abtn" class="shamaa">中國語</a>
-								</li>
-								<li><a href="#" class="abtn" class="shamaa">日本語</a>
-								</li>
+								<li><a href="#" class="abtn" class="shamaa">EngliSh</a></li>
+								<li><a href="#" class="abtn" class="shamaa">中國語</a></li>
+								<li><a href="#" class="abtn" class="shamaa">日本語</a></li>
 							</ul></li>
 					</ul>
 				</div>
@@ -302,33 +283,27 @@
 					<!-- 비누방울!! -->
 					<!-- 인스타 -->
 					<div class="buble bb1">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 					<!-- 페북 -->
 					<div class="buble bb2">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-facebook"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-facebook"></i></a>
 					</div>
 					<!-- 트위터 -->
 					<div class="buble bb3">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-twitter"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-twitter"></i></a>
 					</div>
 					<!-- 유튜브 -->
 					<div class="buble bb4">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-youtube"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-youtube"></i></a>
 					</div>
 					<!-- 틱톡 -->
 					<div class="buble bb5">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-tiktok"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-tiktok"></i></a>
 					</div>
 					<!-- 프로필(나무위키) -->
 					<div class="buble bb6">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-wikipedia-w"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-wikipedia-w"></i></a>
 					</div>
 					<div class="bubblepop b1"></div>
 					<div class="bubblepop b2"></div>
