@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -13,7 +15,7 @@
     </head>
     <body>
         <div class="logo">
-            <a href="./main.html"><h1>메인 페이지로</h1></a>
+            <a href="./main.jsp"><h1>메인 페이지로</h1></a>
         </div>
     </body>
 </html>

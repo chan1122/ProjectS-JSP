@@ -19,28 +19,28 @@ let GAG = JSON.parse(JSON.stringify(PMJjsonDATA));
 //////////////////////////////////////////////////
 // 함수 구역 -------------------------------------
 //////////////////////////////////////////////////
-let album;
-let track;
+
+
 function LoadFor() {
   for (let i = 0; i < 50; i++) {
     MTC.append(main_album_track_FOR50);
   }
-  album = $(".album");
-  track = $(".track");
 
+ let  album = $(".album");
+  let track = $(".track");
   album.each((i1, e1) => {
     // 변수 셋팅
     let ei = track.eq(i1);
     let sns = ei.find("a");
     let gpais = GAG["PMJ" + albnum[i1]]["SNS주소"];
     // 인스타그램 아이콘
-    sns.eq(0).attr("href", gpais[0]);
+     // sns.eq(0).attr("href", gpais[0]);
     // 유튜브 아이콘
-    sns.eq(1).attr("href", gpais[1]);
+    // sns.eq(1).attr("href", gpais[1]);
     // 트위터 아이콘
-    sns.eq(2).attr("href", gpais[3]);
+    // sns.eq(2).attr("href", gpais[3]);
     // 페이스북 아이콘
-    sns.eq(3).attr("href", gpais[4]);
+    // sns.eq(3).attr("href", gpais[4]);
 
     ei.find(".AUDIO").attr(
       "src",
