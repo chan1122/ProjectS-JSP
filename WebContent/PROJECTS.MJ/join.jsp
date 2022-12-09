@@ -98,8 +98,8 @@
 				</form>
 			</section>
 
-			<footer></footer>
 		</div>
 	</main>
+			<footer></footer>
 </body>
 </html>

@@ -21,11 +21,7 @@ import { PMJ_SUB_FOR_AL, VALITest, Widbb } from "./module/FUNCTIONS.js";
 PMJ_SUB_FOR_AL();
 // import {albnum} from `./main`;
 $(() => {
-    tbt.click(function () {
-        //버튼에 줄가있는거 x자 만들기
-        $(this).toggleClass("on");
-        Widbb();
-    }); // 상단 햄버거 버튼 클릭시 이벤트 //
+   
     // 상단 GNB A요소 호버시 슬라이드 다운효과
     ssm.css({
         width: "99.6vw",
