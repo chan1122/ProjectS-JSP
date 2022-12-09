@@ -54,8 +54,8 @@
 
 		<!-- -------------------------------- 상단 GNB 끝-------------------------------- -->
 		<!-- 왼쪽 흐르는 글자 -->
+    <div class="toppin"></div>
 		<main class="per3d">
-			<!-- 상단 햄버거 버튼 클릭시 나오는 박스 -->
 
 			<div class="mainbox mains-tem">
 				<div class="Lcoverbox">
@@ -102,6 +102,7 @@
 							<span></span>
 						</div>
 					</div>
+          
 					<!-- 비누방울!! -->
 					<!-- 인스타 -->
 					<div class="buble bb1">
