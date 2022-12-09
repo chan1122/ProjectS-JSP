@@ -43,10 +43,7 @@
 			class="fa-solid fa-volume-xmark"></i>
 		</span>
 	</div>
-	<%-- 메인으로 돌아가는 링크 --%>
-	<div class="coverlogotop">
-		<a href="#" class="abtn">GO-MAIN</a>
-	</div>
+
 	<%@ include file="include/01.topSETTING.jsp"%>
 	<div class="bodywrapp">
 		<!-- 배경영상 비디오!! -->
@@ -54,7 +51,7 @@
 
 		<!-- -------------------------------- 상단 GNB 끝-------------------------------- -->
 		<!-- 왼쪽 흐르는 글자 -->
-    <div class="toppin"></div>
+		<div class="toppin"></div>
 		<main class="per3d">
 
 			<div class="mainbox mains-tem">
@@ -102,12 +99,11 @@
 							<span></span>
 						</div>
 					</div>
-          
+
 					<!-- 비누방울!! -->
 					<!-- 인스타 -->
 					<div class="buble bb1">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 					<!-- 페북 -->
 					<div class="buble bb2">
@@ -127,8 +123,7 @@
 					</div>
 					<!-- 프로필(나무위키) -->
 					<div class="buble bb6">
-						<a href="#" class="abtn"><i
-							class="fa-brands fa-wikipedia-w"></i></a>
+						<a href="#" class="abtn"><i class="fa-brands fa-wikipedia-w"></i></a>
 					</div>
 					<!-- 건드리면 터지는 비눗방울 -->
 					<div class="bubblepop b1"></div>

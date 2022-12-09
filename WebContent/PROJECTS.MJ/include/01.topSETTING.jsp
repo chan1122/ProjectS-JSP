@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+	<%-- 메인으로 돌아가는 링크 --%>
+	<div class="coverlogotop">
+		<a href="#" class="abtn">GO-MAIN</a>
+	</div>
  <header>
           <!-- 상단 햄버거 버튼! -->
           <div class="topbtn">
