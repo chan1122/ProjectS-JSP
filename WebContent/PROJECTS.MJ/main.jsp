@@ -46,10 +46,6 @@
 
 	<%@ include file="include/01.topSETTING.jsp"%>
 	<div class="bodywrapp">
-		<!-- 배경영상 비디오!! -->
-		<!-- 상단 pmj클릭시 상단으로 가는 버튼 -->
-
-		<!-- -------------------------------- 상단 GNB 끝-------------------------------- -->
 		<!-- 왼쪽 흐르는 글자 -->
 		<div class="toppin"></div>
 		<main class="per3d">
@@ -183,9 +179,13 @@
 			</div>
 			<div class="maintrackcover"></div>
 		</main>
+		<%@ include file="include/02-1.mainPLAT.jsp"%>
 		<!-- 메인 영역 끝----------------------------------------------->
 		<%-- 하단영역 --%>
-		<footer> </footer>
+		<footer> 
+			<%@ include file="include/03.info.jsp"%>
+
+		</footer>
 	</div>
 </body>
 </html>

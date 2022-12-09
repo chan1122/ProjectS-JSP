@@ -32,5 +32,6 @@
 			<div class="swiper-pagination"></div>
 		</div>
 	</main>
+	<footer></footer>
 </body>
 </html>
