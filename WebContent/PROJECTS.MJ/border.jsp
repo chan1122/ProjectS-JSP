@@ -117,6 +117,14 @@
 			</tfoot>
 		</table>
 	</main>
+	
+	<!-- 입력 페이지 이동 버튼 -->
+	<div class="insert-location-btn">
+	<a href="borderinsert.jsp" class="insert-location-btn-a">
+	게시글 작성
+	</a>
+	</div>	
+	
 	<div class="section-gubun-cover">
 		<section><span>개발자</span> :|: <span>G</span></section>
 		<section><span>최고관리자</span> :|: <span>S</span></section>
