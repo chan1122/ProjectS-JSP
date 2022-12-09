@@ -2,92 +2,73 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <!-- 폰트어썸 스크립트 -->
-    <script
-      src="https://kit.fontawesome.com/026565440e.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./CSS/login.css" />
-    <!-- 미디어쿼리 -->
-    <link rel="stylesheet" href="./CSS/midiaquerylogin.css" />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login</title>
+<!-- 폰트어썸 스크립트 -->
+<script src="https://kit.fontawesome.com/026565440e.js"
+	crossorigin="anonymous"></script>
+<!-- css -->
+<link rel="stylesheet" href="./CSS/login.css" />
+<!-- 미디어쿼리 -->
+<link rel="stylesheet" href="./CSS/midiaquerylogin.css" />
 
-    <!-- JQ 라이브러리 -->
-    <script src="./JS/jquery/jquery-3.6.1.min.js"></script>
-    <script src="./JS/jquery/jquery-ui.min.js"></script>
-    <!-- JS -->
-    <script src="./JS/module/DATA-JSON/PMJ_JSON_DATA.json"></script>
-    <script src="./JS/login.js" type="module"></script>
-    <script src="./JS/link.js" type="module"></script>
-  </head>
-  <body>
-    <video
-      class="VID"
-      src="./images/video/pagevideo2 (online-video-cutter.com).mp4"
-      autoplay
-      muted
-      playninline
-      loop
-    ></video>
-    <!-- body를 싸는 박스  -->
-    <div class="bodywrap">
-      <!-- 상단 pmj클릭시 상단으로 가는 버튼 -->
-      <div class="coverlogotop">
-        <a href="#" class="abtn">GO-MAIN</a>
-      </div>
+<!-- JQ 라이브러리 -->
+<script src="./JS/jquery/jquery-3.6.1.min.js"></script>
+<script src="./JS/jquery/jquery-ui.min.js"></script>
+<!-- JS -->
+<script src="./JS/module/DATA-JSON/PMJ_JSON_DATA.json"></script>
+<script src="./JS/login.js" type="module"></script>
+<script src="./JS/link.js" type="module"></script>
+</head>
+<body>
+	<video class="VID"
+		src="./images/video/pagevideo2 (online-video-cutter.com).mp4" autoplay
+		muted playninline loop></video>
+	<!-- body를 싸는 박스  -->
+	<div class="bodywrap">
+		<!-- 상단 pmj클릭시 상단으로 가는 버튼 -->
+		<div class="coverlogotop">
+			<a href="#" class="abtn">GO-MAIN</a>
+		</div>
 
-      <header>
-        <!-- 상단 햄버거 버튼! -->
-        <div class="topbtn">
-          <!-- 버튼클릭시 옆으로 커지는 박스 -->
+		<header>
+			<!-- 상단 햄버거 버튼! -->
+			<div class="topbtn">
+				<!-- 버튼클릭시 옆으로 커지는 박스 -->
 
-          <div class="btntop">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+				<div class="btntop">
+					<span></span> <span></span> <span></span> <span></span> <span></span>
+					<span></span>
 
-            <!-- 2 4 5번 점 짂는 span -->
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <!-- 상단 전체 박스 -->
-        <div class="tbox1">
-          <!-- 로그인 회원 가입  -->
-          <ul class="lm">
-            <li>
-              <a href="#" class="abtn" class="login"> logIn</a>
-            </li>
-            |
-            <li>
-              <a href="#" class="abtn" class="member">Sign</a>
-            </li>
-          </ul>
-          <!-- 로고 싸는 박스 -->
-          <div class="top">
-            <!-- 상단 부분 구분하기위해 헤더태그를 붙임 -->
-            <header>
-              <!-- 탑로고 SVG관련해서 있음 -->
-              <section class="toplogo">
-                <!-- svg 커버용 박스 -->
-                <section class="coverSVG">
-                  <!-- 비율유지 박스 -->
-                  <div>
-                    <!-- SVG -->
-                    <div>
-                      <svg viewbox="-2 -2 300 200 ">
+					<!-- 2 4 5번 점 짂는 span -->
+					<span></span> <span></span> <span></span>
+				</div>
+			</div>
+			<!-- 상단 전체 박스 -->
+			<div class="tbox1">
+				<!-- 로그인 회원 가입  -->
+				<ul class="lm">
+					<li><a href="#" class="abtn" class="login"> logIn</a></li> |
+					<li><a href="#" class="abtn" class="member">Sign</a></li>
+				</ul>
+				<!-- 로고 싸는 박스 -->
+				<div class="top">
+					<!-- 상단 부분 구분하기위해 헤더태그를 붙임 -->
+					<header>
+						<!-- 탑로고 SVG관련해서 있음 -->
+						<section class="toplogo">
+							<!-- svg 커버용 박스 -->
+							<section class="coverSVG">
+								<!-- 비율유지 박스 -->
+								<div>
+									<!-- SVG -->
+									<div>
+										<svg viewbox="-2 -2 300 200 ">
                         <!-- SVG객체 -->
-                        <path
-                          class="P0 path"
-                          d="M67.43,4.86c0.64,0.85,1.19,1.85,1.66,2.99c0.45,1.14,0.54,1.77,0.26,1.89c-0.23,0.09-0.39,0.06-0.52-0.11
+                        <path class="P0 path"
+												d="M67.43,4.86c0.64,0.85,1.19,1.85,1.66,2.99c0.45,1.14,0.54,1.77,0.26,1.89c-0.23,0.09-0.39,0.06-0.52-0.11
                       c-0.04-0.05-0.07-0.13-0.1-0.25c-0.28-1.39-0.92-2.74-1.91-4.07c-1.56-2.06-3.65-3.38-6.27-3.95s-5.31-0.29-8.05,0.82
                       c-3.71,1.5-6.85,3.95-9.44,7.33c4.84,0.6,8.2,2.15,10.08,4.64c1.59,2.09,1.82,4.39,0.69,6.88c-1.12,2.49-3.22,4.36-6.31,5.61
                       c-1.2,0.49-2.63,0.84-4.29,1.04c-1.65,0.21-2.59,0.16-2.83-0.16c-0.03-0.12,0.02-0.21,0.16-0.26c0.11-0.05,0.33-0.07,0.65-0.07
@@ -104,15 +85,13 @@
                       c-1.28-0.41-2.31-1.13-3.09-2.16c-1.93-2.56-1.9-5.82,0.09-9.79s4.99-6.78,9.02-8.41c3.84-1.56,6.75-1.04,8.72,1.56
                       c2.41,3.17,2.39,7.38-0.06,12.61s-6.04,8.82-10.8,10.74c-3.11,1.26-6.11,1.59-9.01,0.98s-5.21-2.06-6.95-4.35
                       C-0.62,40.62-0.25,34.94,4,28.22s10.7-11.84,19.34-15.35c6.56-2.66,12.9-3.84,18.99-3.51c2.68-3.53,5.92-6.06,9.75-7.62
-                      c3-1.22,5.89-1.54,8.71-0.97C63.59,1.36,65.8,2.71,67.43,4.86z"
-                        ></path>
+                      c3-1.22,5.89-1.54,8.71-0.97C63.59,1.36,65.8,2.71,67.43,4.86z"></path>
                       </svg>
-                    </div>
-                    <div>
-                      <svg viewbox="-2 -2 300 200">
-                        <path
-                          class="M0 path"
-                          d="M69.5,17.41c0,1.05-0.07,2.06-0.2,3.04c-0.14,0.98-0.27,1.47-0.42,1.47c-0.11,0-0.17-0.07-0.17-0.22
+									</div>
+									<div>
+										<svg viewbox="-2 -2 300 200">
+                        <path class="M0 path"
+												d="M69.5,17.41c0,1.05-0.07,2.06-0.2,3.04c-0.14,0.98-0.27,1.47-0.42,1.47c-0.11,0-0.17-0.07-0.17-0.22
                     c0.02-0.11,0.03-0.21,0.05-0.32c0.24-0.94,0.36-2.2,0.36-3.79c0-3.57-0.84-6.6-2.52-9.09s-3.73-3.73-6.16-3.73
                     c-3.92,0-7.92,3.25-12.03,9.76c-1.62,2.55-3.01,5.04-4.18,7.46c-1.13,2.28-3.33,7.12-6.61,14.51c-4.85,10.89-8.83,17.69-11.93,20.4
                     c-1.39,1.21-2.29,1.81-2.69,1.81c-0.1,0-0.14-0.09-0.14-0.28c0.02-0.03,0.18-0.24,0.5-0.64c1.55-1.96,2.79-4.6,3.71-7.9
@@ -140,15 +119,13 @@
                     c0,0.27-0.75,2.01-2.24,5.21c-1.82,3.93-3.45,6.6-4.89,8.03c-1.43,1.42-3.2,2.14-5.29,2.14c-1.3,0-2.7-0.25-4.21-0.74
                     c-1.06,0.6-2.15,0.91-3.26,0.91c-0.84,0-1.26-0.28-1.26-0.82c0-0.67,0.59-1.01,1.76-1.01c0.65,0,1.51,0.13,2.57,0.4h0.31
                     c1.68-1.02,3.1-2.64,4.27-4.85s2.56-5.96,4.2-11.22c3.31-10.67,5.93-18.22,7.87-22.65c1.87-4.24,4.11-7.87,6.73-10.88
-                    c1.32-1.48,2.16-2.22,2.54-2.22C58.01,6.24,58.06,6.32,58.06,6.48z"
-                        ></path>
+                    c1.32-1.48,2.16-2.22,2.54-2.22C58.01,6.24,58.06,6.32,58.06,6.48z"></path>
                       </svg>
-                    </div>
-                    <div>
-                      <svg viewbox="-2 -3 250 200">
-                        <path
-                          class="J0 path"
-                          d="M49.99,0.28c0.09,0.22-0.58,0.77-2,1.65c-1.49,0.89-3.16,1.74-5.04,2.55c-2.68,2.82-4.75,5.71-6.19,8.69
+									</div>
+									<div>
+										<svg viewbox="-2 -3 250 200">
+                        <path class="J0 path"
+												d="M49.99,0.28c0.09,0.22-0.58,0.77-2,1.65c-1.49,0.89-3.16,1.74-5.04,2.55c-2.68,2.82-4.75,5.71-6.19,8.69
                   c-1.44,2.97-2.72,7.04-3.85,12.18l0.77-0.16c3.47-0.71,6.02-2.22,7.65-4.54c0.8-1.15,1.14-2.52,1.01-4.11
                   c-0.01-0.25,0.06-0.39,0.23-0.43c0.19-0.04,0.3,0.02,0.37,0.17c0.66,1.64,0.02,3.45-1.91,5.42c-1.93,1.97-4.31,3.25-7.15,3.83
                   c-0.43,0.09-0.79,0.15-1.1,0.18c-0.04,0.22-0.3,1.24-0.76,3.08c-1.06,4.26-2.15,7.38-3.25,9.35c-1.11,1.97-2.81,3.88-5.09,5.71
@@ -159,199 +136,129 @@
                   c-2.26-0.03-4.23-0.49-5.92-1.39c-1.69-0.9-2.84-2.09-3.43-3.57c-1.06-2.64-0.42-5.16,1.93-7.56c1.39-1.41,2.92-2.51,4.58-3.3
                   c1.68-0.79,4.82-1.88,9.42-3.29c2.03-0.61,4.39-1.46,7.1-2.57c3.12-2.52,5.41-3.94,6.89-4.24C49.75,0.07,49.93,0.12,49.99,0.28z
                    M42.13,4.85c-1.3,0.53-3.06,1.24-5.29,2.1c-3.61,1.41-6.3,2.62-8.07,3.63c-1.77,1.01-3.28,2.2-4.53,3.55
-                  c-2.66,2.88-3.52,5.5-2.57,7.88c0.93,2.32,3.37,3.54,7.33,3.66C31.97,16.45,36.34,9.51,42.13,4.85z"
-                        ></path>
+                  c-2.66,2.88-3.52,5.5-2.57,7.88c0.93,2.32,3.37,3.54,7.33,3.66C31.97,16.45,36.34,9.51,42.13,4.85z"></path>
                       </svg>
-                    </div>
-                  </div>
-                </section>
-              </section>
-            </header>
-          </div>
-          <div class="slidegnb box nav">
-            <nav class="gnb">
-              <ul>
-                <li class="sm">
-                  <a href="#" class="abtn"> 앨범소개♡ </a>
-                  <ul class="ssm">
-                    <div class="beforebox">
-                      <li>
-                        <a href="#" class="abtn">앨범 상세</a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li class="sm">
-                  <a href="#" class="abtn"> CHART♡ </a>
-                  <ul class="ssm">
-                    <div class="beforebox">
-                      <li>
-                        <a href="#" class="abtn">PMJ(노래방인기!)</a>
-                      </li>
-                      <li>
-                        <a href="#" class="abtn">BMJ(빌보드!)</a>
-                      </li>
-                      <li>
-                        <a href="#" class="abtn">MMJ(일반 음원차트!)</a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li class="sm">
-                  <a href="#" class="abtn"> 게시판♡ </a>
-                  <ul class="ssm">
-                    <div class="beforebox">
-                      <li>
-                        <a href="#" class="abtn">회원전용</a>
-                      </li>
-                      <li>
-                        <a href="#" class="abtn">일반게시판</a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-                <li class="sm">
-                  <a href="#" class="abtn"> 기타세부사항♡ </a>
-                  <ul class="ssm">
-                    <div class="beforebox">
-                      <li>
-                        <a href="#" class="abtn">안내문구</a>
-                      </li>
-                      <li>
-                        <a href="#" class="abtn">페이지 소개글</a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
+									</div>
+								</div>
+							</section>
+						</section>
+					</header>
+				</div>
+				<div class="slidegnb box nav">
+					<nav class="gnb">
+						<ul>
+							<li class="sm"><a href="#" class="abtn"> 앨범소개♡ </a>
+								<ul class="ssm">
+									<div class="beforebox">
+										<li><a href="#" class="abtn">앨범 상세</a></li>
+									</div>
+								</ul></li>
+							<li class="sm"><a href="#" class="abtn"> CHART♡ </a>
+								<ul class="ssm">
+									<div class="beforebox">
+										<li><a href="#" class="abtn">PMJ(노래방인기!)</a></li>
+										<li><a href="#" class="abtn">BMJ(빌보드!)</a></li>
+										<li><a href="#" class="abtn">MMJ(일반 음원차트!)</a></li>
+									</div>
+								</ul></li>
+							<li class="sm"><a href="#" class="abtn"> 게시판♡ </a>
+								<ul class="ssm">
+									<div class="beforebox">
+										<li><a href="#" class="abtn">회원전용</a></li>
+										<li><a href="#" class="abtn">일반게시판</a></li>
+									</div>
+								</ul></li>
+							<li class="sm"><a href="#" class="abtn"> 기타세부사항♡ </a>
+								<ul class="ssm">
+									<div class="beforebox">
+										<li><a href="#" class="abtn">안내문구</a></li>
+										<li><a href="#" class="abtn">페이지 소개글</a></li>
+									</div>
+								</ul></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-      <!-- 왼쪽 흐르는 글자 -->
-      <div>
-        <!-- 상단 햄버거 버튼 클릭시 나오는 박스 -->
-        <div class="noise"></div>
-        <div class="coralwrapp"></div>
-        <div class="whitewrapp"></div>
-        <div class="wrapp">
-          <div class="ulcoverham">
-            <ul class="hamul">
-              <li>
-                <a href="#" class="abtn" class="hambtnbiga">앨범소개</a>
-                <!-- 세부 카테고라 -->
-                <ul class="sham king">
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">앨범 상세</a>
-                  </li>
-                </ul>
-              </li>
+		<!-- 왼쪽 흐르는 글자 -->
+		<div>
+			<!-- 상단 햄버거 버튼 클릭시 나오는 박스 -->
+			<div class="noise"></div>
+			<div class="coralwrapp"></div>
+			<div class="whitewrapp"></div>
+			<div class="wrapp">
+				<div class="ulcoverham">
+					<ul class="hamul">
+						<li><a href="#" class="abtn" class="hambtnbiga">앨범소개</a> <!-- 세부 카테고라 -->
+							<ul class="sham king">
+								<li><a href="#" class="abtn" class="shamaa">앨범 상세</a></li>
+							</ul></li>
 
-              <li>
-                <a href="#" class="abtn" class="hambtnbiga">인기!</a>
-                <ul class="sham mostmusic">
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">PMJ</a>
-                  </li>
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">BMJ</a>
-                  </li>
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">MMJ</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="abtn" class="hambtnbiga">게시판</a>
-                <ul class="sham Hboard">
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">자유게시판📣</a>
-                  </li>
-                  <li>
-                    <a href="#" class="abtn" class="shamaa"
-                      >회원전용 게시판📢</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="abtn" class="hambtnbiga">LANGUAGE</a>
-                <ul class="sham LANGUAGE">
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">EngliSh</a>
-                  </li>
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">中國語</a>
-                  </li>
-                  <li>
-                    <a href="#" class="abtn" class="shamaa">日本語</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+						<li><a href="#" class="abtn" class="hambtnbiga">인기!</a>
+							<ul class="sham mostmusic">
+								<li><a href="#" class="abtn" class="shamaa">PMJ</a></li>
+								<li><a href="#" class="abtn" class="shamaa">BMJ</a></li>
+								<li><a href="#" class="abtn" class="shamaa">MMJ</a></li>
+							</ul></li>
+						<li><a href="#" class="abtn" class="hambtnbiga">게시판</a>
+							<ul class="sham Hboard">
+								<li><a href="#" class="abtn" class="shamaa">자유게시판📣</a></li>
+								<li><a href="#" class="abtn" class="shamaa">회원전용
+										게시판📢</a></li>
+							</ul></li>
+						<li><a href="#" class="abtn" class="hambtnbiga">LANGUAGE</a>
+							<ul class="sham LANGUAGE">
+								<li><a href="#" class="abtn" class="shamaa">EngliSh</a></li>
+								<li><a href="#" class="abtn" class="shamaa">中國語</a></li>
+								<li><a href="#" class="abtn" class="shamaa">日本語</a></li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <main class="loginmain">
-      <h1 class="maintit">H</h1>
+	<main class="loginmain">
+		<h1 class="maintit">H</h1>
 
-      <!-- 싸는박스!! -->
-      <div class="wbx">
-        <h1 class="logtit">LOGIN</h1>
-        <section class="Formlogin">
-          <!-- form요소 -->
-          <form action="process.php" method="post" class="logF">
-            <!-- ID요소 -->
-            <div class="joinPUT">
-              <label for="IDTEXT" class="JTXT IDtxt">ID</label>
-              <input
-                type="text"
-                name="IDTEXT"
-                id="IDTEXT"
-                maxlength="10"
-                placeholder="ID INSERT HERE"
-              />
-            </div>
-            <!-- PASSWORD요소 -->
-            <div class="joinPUT">
-              <label for="PWDTEXT" class="JTXT passtxt">PASSWORD </label>
-              <input
-                type="password"
-                name="PWDTEXT"
-                id="PWDTEXT"
-                maxlength="20"
-                placeholder="PASSWORD INSERT"
-              />
-            </div>
-            <!-- 기타 링크들  -->
-            <span class="chbxcover">
-              <input
-                type="checkbox"
-                id="chbx"
-                name="chbx"
-                style="display: none"
-              />
-              <span><i class="fa-solid fa-circle-check"></i></span>
-              <label for="chbx">STAY SIGNED IN</label>
-            </span>
-            <div class="addbx">
-              <a href="#" class="abtn logabtn">아이디찾기</a
-              ><span class="VerI"> |</span>
-              <a href="#" class="abtn logabtn">비밀번호찾기</a
-              ><span class="VerI"> |</span>
-              <a href="#" class="abtn logabtn">회원가입</a>
-            </div>
-            <!-- 로그인 버튼!-->
-            <div class="logbtn">
-              <input type="submit" id="logbtn" value="LOGIN" />
-            </div>
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer></footer>
-  </body>
+		<!-- 싸는박스!! -->
+		<div class="wbx">
+			<h1 class="logtit">LOGIN</h1>
+			<section class="Formlogin">
+				<!-- form요소 -->
+				<form action="process.php" method="post" class="logF">
+					<!-- ID요소 -->
+					<div class="joinPUT">
+						<label for="IDTEXT" class="JTXT IDtxt">ID</label> <input
+							type="text" name="IDTEXT" id="IDTEXT" maxlength="10"
+							placeholder="ID INSERT HERE" />
+					</div>
+					<!-- PASSWORD요소 -->
+					<div class="joinPUT">
+						<label for="PWDTEXT" class="JTXT passtxt">PASSWORD </label> <input
+							type="password" name="PWDTEXT" id="PWDTEXT" maxlength="20"
+							placeholder="PASSWORD INSERT" />
+					</div>
+					<!-- 기타 링크들  -->
+					<span class="chbxcover"> <input type="checkbox" id="chbx"
+						name="chbx" style="display: none" /> <span><i
+							class="fa-solid fa-circle-check"></i></span> <label for="chbx">STAY
+							SIGNED IN</label>
+					</span>
+					<div class="addbx">
+						<a href="#" class="abtn logabtn">아이디찾기</a><span class="VerI">
+							|</span> <a href="#" class="abtn logabtn">비밀번호찾기</a><span class="VerI">
+							|</span> <a href="#" class="abtn logabtn">회원가입</a>
+					</div>
+					<!-- 로그인 버튼!-->
+					<div class="logbtn">
+						<input type="submit" id="logbtn" value="LOGIN" />
+					</div>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer></footer>
+</body>
 </html>

@@ -102,37 +102,6 @@ $(() => {
             topA.find(".lm").slideDown();
             topA.removeClass("on");
         }
-
-        // 상태가 1이면 앨범이 열린상태이므로 스크롤 금지
-        if (alSts) {
-            //   e.preventDefault();
-            // 방향에 따라 이전,다음 전환
-
-            console.log("임시잠금:", tempSts, "/delta:", delta);
-            // 광스크롤 막기
-            if (tempSts === 1) {
-                e.preventDefault();
-                return;
-            }
-            tempSts = 1;
-            setTimeout(() => {
-                tempSts = 0;
-            }, 1000);
-
-            if (delta < 0) {
-                let ele = $(".mtrack").filter(".on").parent().next();
-                ele.trigger("click");
-                ele.clickSetFn(ele);
-            } else if (delta > 0) {
-                $(".mtrack")
-                    .filter(".on")
-                    .parent()
-                    .prev()
-                    .css({ height: "50vh" })
-                    .trigger("click");
-            }
-        } else {
-        }
         lastSc = scTop;
     }); /// 윈도우스크롤 ///
 }); // 메인 앨범 트랙 스크롤
