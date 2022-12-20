@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* 음원사이트 intro페이지 CSS - main.css */
+
+/* 외부 CSS 합치기 */
+@import url(reset.css);
+@import url(core.css);
+@import url(introcommon.css);
+
+/* 공사중 확인 */
+body * {
+  /* outline: 2px dotted red; */
+}
+/* 배경색 설정 */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 공통  */
+.div_wrapp {
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+}
+.wrap_black {
+  background-color: black;
+}
+.wrap_coral {
+  background-color: coral;
+}
+.wrap_white {
+  background-color: #fff;
+}
+.wrap_noise {
+  background-color: rgba(128, 128, 128, 0.292);
+}
+
+/* 앨범 */
+.circle-1 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  outline: 2px solid white;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: url(../images/EP_PNG3.png) center / 100% 100% no-repeat;
+
+  animation: spin_EP 10.2s linear ;
+}
+
+@keyframes spin_EP {
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  10%{
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+  20%{
+    transform: translate(-50%, -50%) rotate(60deg);
+  }
+  30%{
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  40%{
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  50%{
+    transform: translate(-50%, -50%) rotate(150deg);
+  }
+  60%{
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  70%{
+    transform: translate(-50%, -50%) rotate(300deg);
+  }
+  80%{
+    transform: translate(-50%, -50%) rotate(370deg);
+  }
+  90%{
+    transform: translate(-50%, -50%) rotate(500deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(3600deg);
+  }
+}
+
+.circle-2 {
+  width: 140px;
+  height: 140px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  background: linear-gradient(to bottom, burlywood , blue);
+  outline: 2px solid #fff;
+}
+
+.circle-3 {
+  width: 60px;
+  height: 60px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background-color: black;
+  outline: 2px solid #fff;
+}
