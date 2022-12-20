@@ -87,7 +87,8 @@ $(() => {
       topA.find(".top").slideUp();
       topA.find(".lm").slideUp();
       topA.addClass("on");
-      $(".mainlocate").slideUp();
+      $(".mainlocate").hide();
+      $(".coverlogotop").slideUp();
 
       // 2. 상단 얇은줄 줄어들고 늘어나기
       if (scTop > lastSc) {
@@ -102,7 +103,7 @@ $(() => {
       topA.find(".top").slideDown();
       topA.find(".lm").slideDown();
       topA.removeClass("on");
-
+      $(".coverlogotop").show();
       $(".mainlocate").slideDown();
     }
     lastSc = scTop;
