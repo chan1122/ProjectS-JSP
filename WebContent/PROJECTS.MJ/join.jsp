@@ -65,11 +65,18 @@
 						<span class="Requird-input"></span>
 					</div>
 					<!-- 성별 -->
-					<div class="gender joinPUT">
-						<label for="gender">GENDER</label> <input class="input_color"
-							type="radio" class="WM" /> <input class="input_color"
-							type="radio" class="MM" /> <span class="Requird-input"></span>
-					</div>
+					<            <div class="gender joinPUT">
+              <label for="gender">GENDER</label>
+              <span class="gender_spe1"
+                ><i class="fa-solid fa-venus gG"></i
+              ></span>
+              <span class="gender_spe2"
+                ><i class="fa-solid fa-mars gG"></i
+              ></span>
+              <input class="input_color" type="radio" id="WM" name="gen" style="display: none;" checked value="WOMAN"/>
+              <input class="input_color" type="radio" id="MM" name="gen" style="display: none;" value="MAN"/>
+              <span class="Requird-input"></span>
+            </div>
 					<!-- 이메일  -->
 					<div class="EMAIL joinPUT">
 						<label for="email" class="JTXT EMAIL1">Email</label> <input

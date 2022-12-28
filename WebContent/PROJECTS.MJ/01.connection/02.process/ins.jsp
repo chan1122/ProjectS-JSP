@@ -13,10 +13,14 @@
 	
 	try{
 		
-		String title_border = request.getparmeter("title_border");
-		String tag = request.getparmeter("tag");
-		String text_for_input = request.getparmeter("text_for_input");
-	    
+		// 제목
+		String title_border = request.getParameter("title_border");
+		// 태그명
+		String tag = request.getParameter("tag");
+		// 써있는부분
+		String text_for_input = request.getParameter("text_for_input");
+		
+		text_for_input = text_for_input.replace("\r\n","<br>");
 		// 넘어온 값 찍기
 		out.println(
 				"▣title_border : "+title_border+"</br>" +

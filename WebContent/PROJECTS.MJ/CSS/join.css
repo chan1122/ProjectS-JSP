@@ -716,6 +716,21 @@ footer .ffll1 {
     outline: 2px solid #000;
     font-size: 20px;
 }
+.gender_spe1{
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.gender_spe2{
+    cursor: pointer;
+    font-size: 30px;
+}
+.gender_spe1.on .gG{
+    transform: scale(1.4);
+}
+.gender_spe2.on .gG{
+    transform: scale(1.4);
+}
 /* 이메일 2번째거  */
 #email2{
   position: absolute;
@@ -740,7 +755,7 @@ footer .ffll1 {
     font-weight: bold;
     font-family: "Zen Dots", cursive;
 }
-.WM {
+#WM {
     margin-left: 15px;
 }
 

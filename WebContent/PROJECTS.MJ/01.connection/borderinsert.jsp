@@ -15,6 +15,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="../JS/module/DATA-JSON/PMJ_JSON_DATA.json"></script>
     <script src="../JS/border_insert.js" type="module"></script>
   </head>
 

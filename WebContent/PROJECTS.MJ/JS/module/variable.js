@@ -65,72 +65,104 @@ const GTASP = $(".pmj_sub-ab-tem");
 // 앨범 열린상태값
 let alSts = 0;
 let setAlSts = (val) => {
-    alSts = val;
+  alSts = val;
 };
 
 // 스크롤위치값
 let scTop = 0;
 let setScTop = (val) => {
-    scTop = val;
+  scTop = val;
 };
 let aa;
 // 델타값
 let delta = 0;
 let setDelta = (val) => {
-    delta = val;
+  delta = val;
 };
 
 /* ********************************** */
-// 유효성 검사 함수 
+// 유효성 검사 함수 + 회원가입 변수
 const jBTN = $("#logbtn");
 const IT = $("#IDTEXT");
-const PT = $("#PWDTEXT")
+const PT = $("#PWDTEXT");
 const NAME = $("#JOINNAME");
-const PT2 = $("#PWDTEXT2")
+const PT2 = $("#PWDTEXT2");
 const EM = $("#email1");
-const SM2 = $("#selmail")
+const SM2 = $("#selmail");
 const inputTESP = $(`input[type=text][id!=email2][class!=search],
-input[type=password]`)
-
+input[type=password]`);
+// 회원가입 변수들
+const WM = $("#WM");
+const MM = $("#MM");
+const GS1 = $(".gender_spe1");
+const GS2 = $(".gender_spe2");
+// 게시판 수정 을 위한 버튼
+const FW1 = $(".FW1");
+const fontW1 = $(".fontW1");
+const fontW2 = $(".fontW2");
+const fontW3 = $(".fontW3");
+const fontW4 = $(".fontW4");
+const selF = $("#sellectfont");
+const pgi = $("#post_get_it");
+const df = $("#direct_form");
+const InPUT_TexT = $("#text_for_input");
+const itt = $("input[type=text]");
+const taat = $("textarea#text_for_input");
 export {
-    tfrxry1,
-    tfrxry2,
-    main_album_track_FOR50,
-    SUB_PMJ_album_track_For50,
-    hb,
-    MTC,
-    ssm,
-    lpnum,
-    moff,
-    mon,
-    mtb,
-    sm,
-    slidegnb,
-    topA,
-    Cl,
-    Gul,
-    GuIA,
-    navC,
-    Hamli,
-    m2,
-    tbt,
-    m3,
-    palt,
-    mpp,
-    GTASP,
-    abtn,
-    alSts,
-    setAlSts,
-    BWP,
-    scTop,
-    setScTop,
-    delta,
-    setDelta,
-    jBTN,
-    IT,
-    PT,
-    inputTESP,
-    NAME,
-    PT2,EM,SM2,
-    
+  tfrxry1,
+  tfrxry2,
+  main_album_track_FOR50,
+  SUB_PMJ_album_track_For50,
+  hb,
+  MTC,
+  ssm,
+  lpnum,
+  moff,
+  mon,
+  mtb,
+  sm,
+  slidegnb,
+  topA,
+  Cl,
+  Gul,
+  GuIA,
+  navC,
+  Hamli,
+  m2,
+  tbt,
+  m3,
+  palt,
+  mpp,
+  GTASP,
+  abtn,
+  alSts,
+  setAlSts,
+  BWP,
+  scTop,
+  setScTop,
+  delta,
+  setDelta,
+  jBTN,
+  IT,
+  PT,
+  inputTESP,
+  NAME,
+  PT2,
+  EM,
+  SM2,
+  FW1,
+  fontW1,
+  fontW2,
+  fontW3,
+  fontW4,
+  InPUT_TexT,
+  selF,
+  itt,
+  pgi,
+  df,
+  taat,
+  WM,
+  MM,
+  GS1,
+  GS2,
 };

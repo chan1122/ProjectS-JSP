@@ -1,11 +1,39 @@
-const FW1 = $(".FW1");
-const fontW1 = $(".fontW1");
-const fontW2 = $(".fontW2");
-const fontW3 = $(".fontW3");
-const fontW4 = $(".fontW4");
-const InPUT_TexT = $("#text_for_input");
-const selF = $("#sellectfont");
+import {
+  FW1,
+  fontW1,
+  fontW2,
+  fontW3,
+  fontW4,
+  InPUT_TexT,
+  selF,
+  itt,
+  pgi,
+  df,
+  taat,
+  Cl,
+} from "./module/variable.js";
+import { selFONT_style } from "./module/FUNCTIONS.js";
 $(() => {
+  // 수정 페이지 처리부분으로 날아가기
+  pgi.click(function (e) {
+    e.preventDefault();
+
+    let results = true;
+
+    itt.each(function (idx, ele) {
+      if ($(ele).val().trim() === "") results = false;
+    }); /// each
+    if (taat.val().trim() === "") results = false;
+
+    Cl("결과: ", results);
+    if (results) {
+      df.submit();
+    } else {
+      alert("모든 항목을 작성해주십시오!");
+    }
+  }); //// click
+  /* ********************************************************************************* */
+  // 게시글 스타일 설정하기위한 프론트앤드 코드
   FW1.click(function () {
     $(this).addClass("on").siblings().removeClass("on");
     // if문 으로 클래스 지정하기
@@ -27,53 +55,4 @@ $(() => {
   });
 });
 
-function selFONT_style(ele) {
-  let tT = $(ele).val();
 
-  switch (tT) {
-    case "nurse":
-      tT = "none";
-      break;
-    case "Barlow Condensed":
-      tT = "Barlow Condensed, sans-serif";
-      break;
-    case "Black Han Sans":
-      tT = "Black Han Sans, sans-serif";
-      break;
-    case "Cairo":
-      tT = "Cairo, sans-serif";
-      break;
-    case "Cute":
-      tT = "Cute Font, cursive";
-      break;
-    case "Gugi":
-      tT = "Gugi, cursive";
-      break;
-    case "Jua":
-      tT = "Jua, sans-serif";
-      break;
-    case "Klee One":
-      tT = "Klee One, cursive";
-      break;
-    case "Kolker Brush":
-      tT = "Kolker Brush, cursive";
-      break;
-    case "Nanum Brush Script":
-      tT = "Nanum Brush Script, cursive";
-      break;
-    case "Single Day":
-      tT = "Single Day, cursive";
-      break;
-    case "Xanh Mono":
-      tT = "Xanh Mono, monospace;";
-      break;
-    case "Yeon Sung":
-      tT = "Yeon Sung, cursive";
-      break;
-    case "Zen Dots":
-      tT = "Zen Dots, cursive";
-      break;
-  } /// switch
-  InPUT_TexT.css({ fontFamily: tT });
-  console.log("바뀐당!", tT);
-}

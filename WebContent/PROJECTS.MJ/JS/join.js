@@ -1,87 +1,102 @@
 // PMJSUB PJ
 import {
-    Cl,
-    EM,
-    GuIA,
-    Gul,
-    Hamli,
-    inputTESP,
-    IT,
-    jBTN,
-    NAME,
-    navC,
-    PT,
-    PT2,
-    SM2,
-    ssm,
-    tbt,
+  Cl,
+  EM,
+  GS1,
+  GS2,
+  GuIA,
+  Gul,
+  Hamli,
+  inputTESP,
+  IT,
+  jBTN,
+  MM,
+  NAME,
+  navC,
+  PT,
+  PT2,
+  SM2,
+  ssm,
+  tbt,
+  WM,
 } from "./module/variable.js";
 import { PMJ_SUB_FOR_AL, VALITest, Widbb } from "./module/FUNCTIONS.js";
 
 PMJ_SUB_FOR_AL();
 // import {albnum} from `./main`;
 $(() => {
-   
-    // 상단 GNB A요소 호버시 슬라이드 다운효과
-    ssm.css({
-        width: "99.6vw",
-        background: "#000",
-        left: "0",
-    });
-    Gul.hover(
-        function () {
-            //오버시
-            $(this).children("ul").stop().slideDown();
+  // 상단 GNB A요소 호버시 슬라이드 다운효과
+  ssm.css({
+    width: "99.6vw",
+    background: "#000",
+    left: "0",
+  });
+  Gul.hover(
+    function () {
+      //오버시
+      $(this).children("ul").stop().slideDown();
 
-            GuIA.css({
-                color: "black",
-                transition: ".5s",
-                fontweight: "bold",
-            });
-            navC.css({ background: "#fff", transition: ".2s" });
-        },
-        function () {
-            //아웃시
-            $(this).children("ul").stop().slideUp();
-            GuIA.css({
-                color: "#fff",
-                transition: ".5s",
-                fontweight: "bold",
-            });
-            navC.css({ background: "#000", transition: ".2s" });
-        }
-    );
+      GuIA.css({
+        color: "black",
+        transition: ".5s",
+        fontweight: "bold",
+      });
+      navC.css({ background: "#fff", transition: ".2s" });
+    },
+    function () {
+      //아웃시
+      $(this).children("ul").stop().slideUp();
+      GuIA.css({
+        color: "#fff",
+        transition: ".5s",
+        fontweight: "bold",
+      });
+      navC.css({ background: "#000", transition: ".2s" });
+    }
+  );
 
-    // 햄버거 버튼 마우스 오버 아웃 시
-    Hamli.hover(
-        function () {
-            const tfs = $(this).find(".sham");
-            // 마우스 오버시
-            tfs.stop().slideDown();
+  // 햄버거 버튼 마우스 오버 아웃 시
+  Hamli.hover(
+    function () {
+      const tfs = $(this).find(".sham");
+      // 마우스 오버시
+      tfs.stop().slideDown();
 
-            $(this)
-                .children(".hambtnbiga")
-                .css({ backgroundColor: "white", color: "black" });
+      $(this)
+        .children(".hambtnbiga")
+        .css({ backgroundColor: "white", color: "black" });
 
-            // 햄버거 버튼 하위 ul li a 호버시 배경색 글자색 반전 -> 만들기!
-        },
-        function () {
-            // 마우스 아웃시
-            const tfs = $(this).find(".sham");
-            tfs.stop().slideUp();
+      // 햄버거 버튼 하위 ul li a 호버시 배경색 글자색 반전 -> 만들기!
+    },
+    function () {
+      // 마우스 아웃시
+      const tfs = $(this).find(".sham");
+      tfs.stop().slideUp();
 
-            $(this)
-                .children(".hambtnbiga")
-                .css({ backgroundColor: "black", color: "white" });
+      $(this)
+        .children(".hambtnbiga")
+        .css({ backgroundColor: "black", color: "white" });
 
-            // 햄버거 버튼 하위 ul li a 호버시 배경색 글자색 반전 -> 만들기!
-        }
-    );
-
-    /****************************************** 
+      // 햄버거 버튼 하위 ul li a 호버시 배경색 글자색 반전 -> 만들기!
+    }
+  );
+  /**************************************************** 
+    [ 성별선택 버튼 ]
+  ****************************************************/
+  GS1.click(function () {
+    WM.trigger("click");
+    $(this).addClass("on");
+    GS2.removeClass("on");
+  });
+  GS2.click(function () {
+    MM.trigger("click");
+    $(this).addClass("on");
+    GS1.removeClass("on");
+  });
+  /****************************************** 
     [ 유효성 검사 AREA ]
   ******************************************/
-   inputTESP.blur(function () {
+  inputTESP.blur(function () {
     /// 모든공백 제거함수 //////
     // get rid of space -> 공백을 제거하라!
     const groSpace = (cv) => cv.replace(/\s/g, "");
@@ -118,7 +133,7 @@ $(() => {
       $(this).siblings(".Requird-input").text("‼필수입력!");
       // siblings(요소) - 다른형제요소 중 특정요소선택
       // siblings() - 아무값도 안쓰면 다른형제요소 모두선택
-      $(this).css({background:"#f28267"})
+      $(this).css({ background: "#f28267" });
       // 불통과!
       pass = false;
     } /////////// if : 빈값체크 ///////////
@@ -138,14 +153,18 @@ $(() => {
           .siblings(".Requird-input")
           .text("영문자로 시작하는 6~20글자 영문자/숫자")
           .removeClass("on"); //빨간글자
-          $(this).css({background:"#f28267"})
+        $(this).css({ background: "#f28267" });
 
         // 불통과!
         pass = false;
       } ///////// if : 불통과시 //////////
       else {
         // 검사결과가 통과시 /////
-        $(this).css({background:"rgb(79 255 79 / 64%)"})
+        $(this)
+          .siblings(".Requird-input")
+          .text("사용가능한 아이디입니다~!")
+          .addClass("on"); // 초록 글자
+        $(this).css({ background: "rgb(79 255 79 / 64%)" });
         /********************************** 
                         [ Ajax로 중복아이디 검사하기 ]
                         ajax 처리유형 2가지
@@ -204,7 +223,6 @@ $(() => {
         //         .siblings(".Requird-input")
         //         .text("존재하는 ID 입니다.")
         //         .removeClass("on"); //빨간글자
-              
 
         //       // 불통과 업데이트 필수!!!
         //       pass = false;
@@ -237,8 +255,10 @@ $(() => {
         // 불통과시 if안으로 들어오기!
         // false일때 들어오려면 !(NOT)연산자로 결과 뒤집기함!
         // 메시지 띄우기
-        $(this).css({background:"#f28267"})
-        $(this).siblings(".Requird-input").text("특수문자,문자,숫자포함 형태의 5~15자리");
+        $(this).css({ background: "#f28267" });
+        $(this)
+          .siblings(".Requird-input")
+          .text("특수문자,문자,숫자포함 형태의 5~15자리");
 
         // 불통과!
         pass = false;
@@ -247,7 +267,7 @@ $(() => {
         // 검사결과가 통과시 /////
         // 메시지 지우기
         $(this).siblings(".Requird-input").empty();
-        $(this).css({background:"rgb(79 255 79 / 64%)"})
+        $(this).css({ background: "rgb(79 255 79 / 64%)" });
       } ////////// else : 통과시 ///////////
     } //////////// else if : 비밀번호검사 /////////////
 
@@ -258,8 +278,10 @@ $(() => {
     else if (cid === "PWDTEXT2") {
       if (cv !== PT.val()) {
         // 메시지 띄우기
-        $(this).siblings(".Requird-input").text("비밀번호가 일치하지 않습니다!");
-        $(this).css({background:"#f28267"})
+        $(this)
+          .siblings(".Requird-input")
+          .text("비밀번호가 일치하지 않습니다!");
+        $(this).css({ background: "#f28267" });
         // 불통과!
         pass = false;
       } ///////// if : 불통과시 //////////
@@ -267,20 +289,28 @@ $(() => {
         // 검사결과가 통과시 /////
         // 메시지 지우기
         $(this).siblings(".Requird-input").empty();
-        $(this).css({background:"rgb(79 255 79 / 64%)"})
+        $(this).css({ background: "rgb(79 255 79 / 64%)" });
       } ////////// else : 통과시 ///////////
     } //////////// else if : 비밀번호확인검사 /////////////
 
-    /****************************************************** 
+    /******************************************************************
+          6 - 1 이름 유효성검사하기
+    *******************************************************************/
+    else if (cid === "JOINNAME") {
+      if ($(this).val() === "") {
+        $(this).css({ background: "#f28267" });
+      } else {
+        $(this).siblings(".Requird-input").empty();
+        $(this).css({ background: "rgb(79 255 79 / 64%)" });
+      }
+    } else if (cid === "email1") {
+      /****************************************************** 
             7. 이메일 유효성 검사하기
             - 검사기준: 이메일 형식에 맞는지 여부검사
         ******************************************************/
-    else if (cid === "email1") {
       // 이메일 주소 만들기 : 앞주소@뒷주소
       let comp =
-        EM.val() +
-        "@" +
-        (SM2.val() === "free" ? EM2.val() : SM2.val());
+        EM.val() + "@" + (SM2.val() === "free" ? EM2.val() : SM2.val());
       // (비?집:놀이동산)
       // 선택박스의 값이 "직접입력"일경우(value가 "free")
       // 이메일 뒷주소가 입력창input#email2의 값을 읽어가고
@@ -322,7 +352,9 @@ $(() => {
     if (cv === "init") {
       // "선택해주세요"
       // 1. 메시지 출력
-      EM.siblings(".Requird-input").text("이메일 옵션 선택필수!").removeClass("on");
+      EM.siblings(".Requird-input")
+        .text("이메일 옵션 선택필수!")
+        .removeClass("on");
       // 2. 직접입력창 숨기기
       EM2.fadeOut(300);
     } /////// if : 선택해주세요 /////////
@@ -370,8 +402,8 @@ $(() => {
         on(이벤트명,함수) -> 제이쿼리 메서드!
 
     ********************************************/
-   const EM_1_2 = $("#email1,#email2");
-   EM_1_2.on("keyup", function () {
+  const EM_1_2 = $("#email1,#email2");
+  EM_1_2.on("keyup", function () {
     // 1. 현재 이벤트 대상 아이디 읽어오기
     let cid = $(this).attr("id");
 
@@ -412,13 +444,14 @@ $(() => {
     // vReg(검사할값,검사항목)
     if (vReg(comp, "eml")) {
       // 메시지 띄우기
-      EM.siblings(".Requird-input").text("적합한 이메일 형식입니다!").addClass("on");
+      EM.siblings(".Requird-input")
+        .text("적합한 이메일 형식입니다!")
+        .addClass("on");
     } ///////// if : 통과시 ///////////
     else {
       /////// 불통과시 ////////////
       // 메시지 띄우기
-      EM
-        .siblings(".Requird-input")
+      EM.siblings(".Requird-input")
         .text("맞지않는 이메일 형식입니다!")
         .removeClass("on");
 
@@ -450,7 +483,7 @@ $(() => {
   // input요소들의 값을 가지고 이동하게 되어 있다!
   // 여기서는 버튼 클릭시 통과 여부 체크를 위해
   // 이것을 막는다!
-  
+
   jBTN.click((e) => {
     // 0. 호출확인!
     console.log("가입해!");
@@ -539,7 +572,7 @@ $(() => {
           // 실패시 /////
           else {
             // 메시지 띄우기
-            alert("웹마스터에게 문의바랍니다!"+res);
+            alert("웹마스터에게 문의바랍니다!" + res);
           } ///// else ///
         } ////// 콜백함수 //////
       ); ///////// post 메서드 ////////////////
@@ -557,7 +590,7 @@ $(() => {
     else {
       //// 불통과시 //////
 
-      alert("입력을 수정하세요~!");
+      alert("입력방식을 확인후 재입력해주세요!");
     } /////// else ///////////
   }); ///////////// click //////////////////
 }); ///////////// jQB //////////////////
@@ -604,4 +637,4 @@ function vReg(val, cid) {
   // 정규식 검사를 위한 JS메서드
   // -> 정규식.test(검사할값) : 결과 true/false
   return reg.test(val); //호출한 곳으로 검사결과리턴!
-} //////////// vReg 
+} //////////// vReg

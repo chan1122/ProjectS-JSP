@@ -14,6 +14,7 @@ import {
   SUB_PMJ_album_track_For50,
   Cl,
   BWP,
+  InPUT_TexT,
 } from "./variable.js";
 let GAG = JSON.parse(JSON.stringify(PMJjsonDATA));
 //////////////////////////////////////////////////
@@ -155,6 +156,60 @@ function VALITest(val, Bid) {
   // -> 정규식.test(검사할값) : 결과 true/false
   return reg.test(val); //호출한 곳으로 검사결과리턴!
 }
+
+/* 
+  [ 글씨체 백엔드 소스 넘기기위한 스위치문]
+*/
+function selFONT_style(ele) {
+  let tT = $(ele).val();
+
+  switch (tT) {
+    case "nurse":
+      tT = "none";
+      break;
+    case "Barlow Condensed":
+      tT = "Barlow Condensed, sans-serif";
+      break;
+    case "Black Han Sans":
+      tT = "Black Han Sans, sans-serif";
+      break;
+    case "Cairo":
+      tT = "Cairo, sans-serif";
+      break;
+    case "Cute":
+      tT = "Cute Font, cursive";
+      break;
+    case "Gugi":
+      tT = "Gugi, cursive";
+      break;
+    case "Jua":
+      tT = "Jua, sans-serif";
+      break;
+    case "Klee One":
+      tT = "Klee One, cursive";
+      break;
+    case "Kolker Brush":
+      tT = "Kolker Brush, cursive";
+      break;
+    case "Nanum Brush Script":
+      tT = "Nanum Brush Script, cursive";
+      break;
+    case "Single Day":
+      tT = "Single Day, cursive";
+      break;
+    case "Xanh Mono":
+      tT = "Xanh Mono, monospace;";
+      break;
+    case "Yeon Sung":
+      tT = "Yeon Sung, cursive";
+      break;
+    case "Zen Dots":
+      tT = "Zen Dots, cursive";
+      break;
+  } /// switch
+  InPUT_TexT.css({ fontFamily: tT });
+  console.log("바뀐당!", tT);
+}
 export {
   LoadFor,
   Widbb,
@@ -162,5 +217,5 @@ export {
   PMJ_SUB_FOR_AL,
   VALIDATION,
   VALITest,
-
+  selFONT_style,
 };
